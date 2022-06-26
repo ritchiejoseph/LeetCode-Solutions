@@ -23,4 +23,5 @@ class Solution:
             diff = target - n
             if diff in Visitedmap:
                 return[Visitedmap[diff],i]
-            Visitedmap[n]=i
+            else:
+                Visitedmap[n]=i
