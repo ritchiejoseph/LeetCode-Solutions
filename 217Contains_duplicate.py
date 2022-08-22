@@ -10,6 +10,14 @@ nums = [1,2,3,4,5,5,6]
 #Space Complexity = (O(1))
 #Compare Every number to every other number in the array
 
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i] == nums[j]:
+                    return True
+        return False
+
 
 #Hash Table Approach
 #Time Complexity = O(n)
